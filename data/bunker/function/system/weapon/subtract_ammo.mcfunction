@@ -1,0 +1,111 @@
+# Store weapon into the shulker
+item replace block 0 -64 0 container.0 from entity @s weapon.mainhand
+
+# Fix ammo being more than 100
+execute if score .ammo temp matches 101.. run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 100
+
+# Subtract ammo
+# (yeah I couldn't find a better way to subtract)
+execute if score .ammo temp matches 1 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 0
+execute if score .ammo temp matches 2 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 1
+execute if score .ammo temp matches 3 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 2
+execute if score .ammo temp matches 4 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 3
+execute if score .ammo temp matches 5 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 4
+execute if score .ammo temp matches 6 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 5
+execute if score .ammo temp matches 7 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 6
+execute if score .ammo temp matches 8 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 7
+execute if score .ammo temp matches 9 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 8
+execute if score .ammo temp matches 10 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 9
+execute if score .ammo temp matches 11 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 10
+execute if score .ammo temp matches 12 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 11
+execute if score .ammo temp matches 13 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 12
+execute if score .ammo temp matches 14 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 13
+execute if score .ammo temp matches 15 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 14
+execute if score .ammo temp matches 16 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 15
+execute if score .ammo temp matches 17 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 16
+execute if score .ammo temp matches 18 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 17
+execute if score .ammo temp matches 19 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 18
+execute if score .ammo temp matches 20 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 19
+execute if score .ammo temp matches 21 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 20
+execute if score .ammo temp matches 22 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 21
+execute if score .ammo temp matches 23 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 22
+execute if score .ammo temp matches 24 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 23
+execute if score .ammo temp matches 25 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 24
+execute if score .ammo temp matches 26 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 25
+execute if score .ammo temp matches 27 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 26
+execute if score .ammo temp matches 28 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 27
+execute if score .ammo temp matches 29 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 28
+execute if score .ammo temp matches 30 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 29
+execute if score .ammo temp matches 31 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 30
+execute if score .ammo temp matches 32 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 31
+execute if score .ammo temp matches 33 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 32
+execute if score .ammo temp matches 34 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 33
+execute if score .ammo temp matches 35 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 34
+execute if score .ammo temp matches 36 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 35
+execute if score .ammo temp matches 37 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 36
+execute if score .ammo temp matches 38 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 37
+execute if score .ammo temp matches 39 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 38
+execute if score .ammo temp matches 40 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 39
+execute if score .ammo temp matches 41 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 40
+execute if score .ammo temp matches 42 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 41
+execute if score .ammo temp matches 43 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 42
+execute if score .ammo temp matches 44 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 43
+execute if score .ammo temp matches 45 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 44
+execute if score .ammo temp matches 46 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 45
+execute if score .ammo temp matches 47 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 46
+execute if score .ammo temp matches 48 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 47
+execute if score .ammo temp matches 49 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 48
+execute if score .ammo temp matches 50 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 49
+execute if score .ammo temp matches 51 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 50
+execute if score .ammo temp matches 52 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 51
+execute if score .ammo temp matches 53 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 52
+execute if score .ammo temp matches 54 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 53
+execute if score .ammo temp matches 55 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 54
+execute if score .ammo temp matches 56 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 55
+execute if score .ammo temp matches 57 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 56
+execute if score .ammo temp matches 58 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 57
+execute if score .ammo temp matches 59 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 58
+execute if score .ammo temp matches 60 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 59
+execute if score .ammo temp matches 61 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 60
+execute if score .ammo temp matches 62 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 61
+execute if score .ammo temp matches 63 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 62
+execute if score .ammo temp matches 64 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 63
+execute if score .ammo temp matches 65 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 64
+execute if score .ammo temp matches 66 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 65
+execute if score .ammo temp matches 67 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 66
+execute if score .ammo temp matches 68 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 67
+execute if score .ammo temp matches 69 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 68
+execute if score .ammo temp matches 70 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 69
+execute if score .ammo temp matches 71 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 70
+execute if score .ammo temp matches 72 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 71
+execute if score .ammo temp matches 73 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 72
+execute if score .ammo temp matches 74 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 73
+execute if score .ammo temp matches 75 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 74
+execute if score .ammo temp matches 76 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 75
+execute if score .ammo temp matches 77 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 76
+execute if score .ammo temp matches 78 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 77
+execute if score .ammo temp matches 79 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 78
+execute if score .ammo temp matches 80 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 79
+execute if score .ammo temp matches 81 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 80
+execute if score .ammo temp matches 82 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 81
+execute if score .ammo temp matches 83 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 82
+execute if score .ammo temp matches 84 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 83
+execute if score .ammo temp matches 85 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 84
+execute if score .ammo temp matches 86 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 85
+execute if score .ammo temp matches 87 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 86
+execute if score .ammo temp matches 88 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 87
+execute if score .ammo temp matches 89 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 88
+execute if score .ammo temp matches 90 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 89
+execute if score .ammo temp matches 91 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 90
+execute if score .ammo temp matches 92 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 91
+execute if score .ammo temp matches 93 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 92
+execute if score .ammo temp matches 94 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 93
+execute if score .ammo temp matches 95 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 94
+execute if score .ammo temp matches 96 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 95
+execute if score .ammo temp matches 97 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 96
+execute if score .ammo temp matches 98 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 97
+execute if score .ammo temp matches 99 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 98
+execute if score .ammo temp matches 100 run data modify block 0 -64 0 Items[0].components.minecraft:custom_data.item.weapon.ammo set value 99
+
+# Give the item back
+item replace entity @s weapon.mainhand from block 0 -64 0 container.0

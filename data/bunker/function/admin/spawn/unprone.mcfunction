@@ -1,0 +1,1 @@
+execute align xz run summon interaction ~0.5 ~ ~0.5 {Tags: ["trigger", "triggerUnprone"], width: 0.1, height: 0.1}
